@@ -3,9 +3,9 @@ package Algos.Sorts;
 import org.jetbrains.annotations.NotNull;
 
 public class BubbleSort {
-
     int[] intArray;
-    public BubbleSort(int @NotNull [] intArray){
+    public BubbleSort(){}
+    public void bubbleSort(int @NotNull [] intArray){
 
         this.intArray = intArray;
 
@@ -18,7 +18,6 @@ public class BubbleSort {
         }
 
     }
-
     private static void swap(int[] array, int i, int j) {
 
         if (i != j) {
@@ -28,4 +27,5 @@ public class BubbleSort {
         }
 
     }
+
 }

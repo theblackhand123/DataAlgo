@@ -3,9 +3,15 @@ package Algos.Sorts;
 import org.jetbrains.annotations.NotNull;
 
 public class SelectionSort {
-
     int[] intArray;
-    public SelectionSort(int @NotNull [] intArray){
+    public SelectionSort(){}
+    public void setIntArray(int[] intArray) {
+        this.intArray = intArray;
+    }
+    public int[] getIntArray() {
+        return intArray;
+    }
+    public void selectionSort(int @NotNull [] intArray){
 
         this.intArray = intArray;
 
@@ -22,8 +28,6 @@ public class SelectionSort {
             swap(intArray, largest, lastUnsortedIndex);
         }
     }
-
-
     private static void swap(int[] array, int i, int j) {
 
         if (i != j) {

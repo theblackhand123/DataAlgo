@@ -3,8 +3,8 @@ package Algos.Sorts;
 import org.jetbrains.annotations.NotNull;
 
 public class InsertionSort {
-
     int[] intArray;
+    public InsertionSort(){}
     public InsertionSort(int @NotNull [] intArray) {
 
         this.intArray = intArray;
